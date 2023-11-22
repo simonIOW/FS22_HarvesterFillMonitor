@@ -2,6 +2,9 @@ name: Create Archive
 on: 
   release:
     branches: [ "main" ]
+  pre-release:
+    branches: [ "main" ]
+    
 jobs:
   build:
     runs-on: ubuntu-latest

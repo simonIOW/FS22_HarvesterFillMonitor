@@ -13,4 +13,3 @@ jobs:
         type: 'zip'
         filename: 'FS22_HarvestFillMonitor.zip'
         exclusions: '*.git* /*node_modules/* .editorconfig'
-        exclusions: '*.git* /*node_modules/* .editorconfig'

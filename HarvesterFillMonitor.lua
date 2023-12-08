@@ -59,8 +59,8 @@ function HarvesterFillMonitor:draw()
 							renderText(x+oX,(y+textSize)-oX, textSize, renderString);
 							local textColor = {1,1,1,1};
 							if isEntered then textColor = {0,1,0,1}; end;
-							if vehicle.totalFillCap > 80 or fuelPerc < 20 then textColor = {1,0.5,0,1}; end;
-							if vehicle.totalFillCap >= 95 or fuelPerc < 10 then textColor = {1,0,0,1}; end;
+							if vehicle.totalFillCap >= 80 or fuelPerc <w 20 then textColor = {1,0.5,0,1}; end;
+							if vehicle.totalFillCap >= 90 or fuelPerc < 10 then textColor = {1,0,0,1}; end;
 							setTextColor(unpack(textColor));
 							renderText(x,y+textSize, textSize, renderString);
 							i=i+1;

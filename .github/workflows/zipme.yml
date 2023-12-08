@@ -8,13 +8,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    
     - uses: actions/checkout@master
-    - name: Archive Release
-      uses: thedoctor0/zip-release@0.7.5
-      with:
-        type: 'zip'
-        filename: 'FS22_HarvestFillMonitor.zip'
-        exclusions: '*.git* /*node_modules/* .editorconfig'
+    - name: Zip Folder
+      run: zip -r "FS22_HarvestFillMonitor.zip" . -x ".git/*" ".github/*" ".gitignore"
+
    
     - name: Upload Release
       uses: softprops/action-gh-release@v1

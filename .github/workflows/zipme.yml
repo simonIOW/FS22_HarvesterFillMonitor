@@ -1,7 +1,7 @@
 name: Create Archive
 on: 
   release:
-    branches: [ "main" ]
+    branches: ["main" ]
     types: ["published"]
       
 jobs:
@@ -11,13 +11,13 @@ jobs:
     
     - uses: actions/checkout@master
     - name: Zip Folder
-      run: zip -r "FS22_HarvestFillMonitor.zip" . -x ".git/*" ".github/*" ".gitignore"
+      run: zip -r 'FS22_HarvestFillMonitor.zip' . -x ".git/*" ".github/*" ".gitignore"
 
    
     - name: Release
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
       with:
-        files: "FS22_HarvestFillMonitor.zip"
+        files: FS22_HarvestFillMonitor.zip
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

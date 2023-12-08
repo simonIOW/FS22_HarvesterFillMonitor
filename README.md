@@ -14,12 +14,12 @@ When fuel or fill capacity has < 10% availablilty text turns red.
 
 Version 1.0.2.1
 
-Updates the upper bound to be 90%
+- Updates the upper bound to be 90%
 
 Version 1.0.2.0
 
-Hides text when driving using AutoDrive mod
-Removes several LUA log errors
-Adds in harvester name
-Adds in fuel level %
-Adds in colours to highlight remaining capacity
+- Hides text when driving using AutoDrive mod
+- Removes several LUA log errors
+- Adds in harvester name
+- Adds in fuel level %
+- Adds in colours to highlight remaining capacity
